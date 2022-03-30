@@ -62,3 +62,12 @@ func Intersection[T comparable](maps Set[T]...) Set[T] {
    }
    return res
 }
+
+// Keys helps get keys from a map for various processing. 
+func Keys[T, U any](m map[T]U) []T {
+   res := make([]T, len(m))
+   for k := range m {
+      res = append(res, k)
+   }
+   return res
+}
