@@ -7,7 +7,7 @@ Should probably change to iterators because
  - super-controllers can't handle multiple generics composed
 
 start:
-
+```go
 // Mapper maps an iterator's value into a slice.
 // Usage; g.Mapper(g.Keys(myMap), func(i int) j str { return myMap[i] * 4 })
 // TODO this SHOULD return an iterator too. NO lists.  Would end in .ToList() for this result. 
@@ -53,4 +53,4 @@ func (it Iterator[T])ToList() []T {
   }
   return res
 }
-*/
+```
